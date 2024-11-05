@@ -1,6 +1,5 @@
-Hello Zeyad
-
 <?php
 echo "Hello Zeyad";
-echo "";
-?>
+echo " ";
+
+echo "no end ";
