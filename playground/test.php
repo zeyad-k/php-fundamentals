@@ -1,5 +1,8 @@
 <?php
-echo "Hello Zeyad";
-echo " ";
 
-echo "no end ";
+$name = "Zeyad";
+echo $name;
+echo ' ';
+echo "Hello $name";
+
+
