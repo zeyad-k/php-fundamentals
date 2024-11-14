@@ -11,8 +11,8 @@
     <h1>Crypto Masters</h1>
     <h3>Conversion Result</h3>
     <?php
-    $amount = $_GET['amount'];
-    $crypto = $_GET['crypto'];
+    $amount = $_POST['amount'];
+    $crypto = $_POST['crypto'];
     $price = 0;
     if ($crypto == 'BTC') {
         $price = 50000;

@@ -15,7 +15,7 @@
 
 
     <h3>Enter Amount of Crypto</h3>
-    <form action="convert.php" method="get">
+    <form action="convert.php" method="post">
         <input type="text" name="amount" placeholder="Enter Amount">
         <select name="crypto">
             <option value="BTC">BTC</option>
