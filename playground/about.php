@@ -8,11 +8,12 @@
 </head>
 
 <body>
-    <h1>Are you PHP ?</h1>
+    <!-- http://localhost:4000/about.php -->
+    <h1>This is About Page</h1>
     <!--  php -S localhost:4000 -->
 
     <?php
-    echo 'Hello World!';
+    echo 'Are you looking for something?';
     ?>
 
 
