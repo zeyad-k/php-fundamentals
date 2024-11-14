@@ -24,7 +24,7 @@
         $price = 1;
     }
     $total = $amount * $price;
-    echo "The total amount of $amount $crypto is $total";
+    echo "<p>The total amount of $amount $crypto is $total</p>";
     ?>
 
 </body>
