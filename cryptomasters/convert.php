@@ -11,20 +11,26 @@
     <h1>Crypto Masters</h1>
     <h3>Conversion Result</h3>
     <?php
-    $amount = $_POST['amount'];
-    $crypto = $_POST['crypto'];
-    $price = 0;
-    if ($crypto == 'BTC') {
-        $price = 50000;
-    } elseif ($crypto == 'ETH') {
-        $price = 3000;
-    } elseif ($crypto == 'LTC') {
-        $price = 200;
-    } elseif ($crypto == 'XRP') {
-        $price = 1;
+    if (isset($_POST['amount']) && isset($_POST['crypto'])) {
+        $amount = $_POST['amount'];
+        $crypto = $_POST['crypto'];
+        $price = 0;
+        if ($crypto == 'BTC') {
+            $price = 50000;
+        } elseif ($crypto == 'ETH') {
+            $price = 3000;
+        } elseif ($crypto == 'LTC') {
+            $price = 200;
+        } elseif ($crypto == 'XRP') {
+            $price = 1;
+        }
+        $total = $amount * $price;
+        echo "<p>The total amount of $amount $crypto is $total</p>";
+
+
+    } else {
+        echo "<p >Amount and Crypto can not be Empty</p>";
     }
-    $total = $amount * $price;
-    echo "<p>The total amount of $amount $crypto is $total</p>";
     ?>
 
 </body>
